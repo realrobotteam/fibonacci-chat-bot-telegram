@@ -36,8 +36,8 @@ async def main():
 
     # Init commands
     bot.register_message_handler(handers.start,                 commands=['start'],         pass_bot=True)
-    bot.register_message_handler(handers.gemini_handler,        commands=['gemini'],        pass_bot=True)
-    bot.register_message_handler(handers.gemini_pro_handler,    commands=['gemini_pro'],    pass_bot=True)
+    bot.register_message_handler(handers.gemini_handler,        commands=['fibonacci'],        pass_bot=True)
+    bot.register_message_handler(handers.gemini_pro_handler,    commands=['fibonacci_pro'],    pass_bot=True)
     bot.register_message_handler(handers.clear,                 commands=['clear'],         pass_bot=True)
     bot.register_message_handler(handers.switch,                commands=['switch'],        pass_bot=True)
     bot.register_message_handler(handers.gemini_photo_handler,  content_types=["photo"],    pass_bot=True)
