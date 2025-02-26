@@ -19,7 +19,7 @@ default_model_dict = gemini.default_model_dict
 
 async def start(message: Message, bot: TeleBot) -> None:
     try:
-        await bot.reply_to(message , escape(" /start chat ai"), parse_mode="MarkdownV2")
+        await bot.reply_to(message , escape(" /start chat ai Power By @Fibonacciaibot"), parse_mode="MarkdownV2")
     except IndexError:
         await bot.reply_to(message, error_info)
 
@@ -27,7 +27,7 @@ async def gemini_handler(message: Message, bot: TeleBot) -> None:
     try:
         m = message.text.strip().split(maxsplit=1)[1].strip()
     except IndexError:
-        await bot.reply_to( message , escape(" /start chat ai"), parse_mode="MarkdownV2")
+        await bot.reply_to( message , escape(" /start chat ai Power By @Fibonacciaibot"), parse_mode="MarkdownV2")
         return
     await gemini.gemini(bot,message,m,model_1)
 
@@ -35,7 +35,7 @@ async def gemini_pro_handler(message: Message, bot: TeleBot) -> None:
     try:
         m = message.text.strip().split(maxsplit=1)[1].strip()
     except IndexError:
-        await bot.reply_to( message , escape(" /start chat ai"), parse_mode="MarkdownV2")
+        await bot.reply_to( message , escape(" /start chat ai Power By @Fibonacciaibot"), parse_mode="MarkdownV2")
         return
     await gemini.gemini(bot,message,m,model_2)
 
