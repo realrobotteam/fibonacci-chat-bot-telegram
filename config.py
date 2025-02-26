@@ -1,9 +1,9 @@
 conf = {
-    "error_info":           "⚠️⚠️⚠️\nSomething went wrong !\nplease try to change your prompt or contact the admin !",
-    "before_generate_info": "🤖Generating🤖",
+    "error_info":           "سرور شلوغ است لطفا صبور باشید",
+    "before_generate_info": "🤖Fibonacci AI Generating🤖",
     "download_pic_notify":  "🤖Loading picture🤖",
-    "model_1":              "fibonacci-2.0-flash-exp",
-    "model_2":              "fibonacci-1.5-pro-latest",
+    "model_1":              "fibonacci-1.5-flash-exp",
+    "model_2":              "fibonacci-1-pro-latest",
     "n": 30  #Number of historical records to keep
 }
 
